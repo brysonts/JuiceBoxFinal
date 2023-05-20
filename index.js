@@ -6,7 +6,7 @@ require('dotenv').config()
 
 // EVERYTHING ELSE
 
-const PORT = 3000
+const PORT = procces.env.PORT || 3000
 const express = require('express')
 const server = express()
 server.use(express.json())
