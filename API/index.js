@@ -6,6 +6,8 @@ const tagsRouter = require('./tags')
 const jwt = require('jsonwebtoken')
 const { getUserById } = require('../db')
 
+procces.env
+
 const { JWT_SECRET } = process.env // set `req.user` if possible
 
 apiRouter.use(async (req, res, next) => {
